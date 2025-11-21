@@ -1,0 +1,16 @@
+export { default as ReactLogo } from "./react";
+export { default as NextLogo } from "./NextJs";
+export { default as HtmlLogo } from "./html";
+export { default as CSSLogo } from "./css";
+export { default as TailwindLogo } from "./tailwind";
+export { default as JavascriptLogo } from "./javascript";
+export { default as CsharpLogo } from "./csharp";
+export { default as PostgreSQLLogo } from "./postgresql";
+export { default as MongoDBLogo } from "./mongodb";
+export { default as NodeJSLogo } from "./nodejs";
+export { default as TypescriptLogo } from "./typescript";
+export { default as ExpressLogo } from "./express";
+export { default as GitLogo } from "./git";
+export { default as NpmLogo } from "./npm";
+export { default as PostmanLogo } from "./postman";
+export { default as Csharp2Logo } from "./csharp2";

@@ -1,65 +1,50 @@
 import Image from "next/image";
+import { BlurFade } from "../components/ui/blur-fade"
+import StacksCard from "@/components/Home/Bento/StacksCard";
+import GlobeCard from "@/components/Home/Bento/GlobeCard";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+    <div className="flex flex-col max-w-[572px] mx-auto p-3">
+      <section className="pb-3 pt-8 md:mt-8 md:pb-16 lg:mt-10 w-full">
+        <BlurFade delay={0.25}>
+          <div className="flex flex-col items-start justify-start gap-5 md:flex-row md:items-center md:justify-between">
+            {' '}
+            <div>
+              {' '}
+                <h1 className="mb-1 mt-0 text-3xl font-semibold dark:text-white">
+                  Murunwa Maphiri
+                </h1>
+                <div className="max-w-[58ch] text-zinc-400 dark:text-zinc-400">
+                  Software Developer
+                </div>
+            </div>{' '}
+          </div>
+        </BlurFade>
+        <section className="mt-8 text-zinc-400">
+          <BlurFade delay={0.25 * 2}>
+            <div className="space-y-5 text-left">
+              <p>
+                I&apos;m the type of person who loves building cool things with code—whether it&apos;s a clean NextJS UI or a solid backend with .NET. I&apos;m constantly learning, experimenting and trying to make each project better than the last. Think of it like my own little tech journey—kind of like a training arc, minus the dramatic music (most of the time).
+              </p>
+              <p>
+                I fell in love with tech at the age of 13 and since then I&apos;ve never looked back. From installing custom roms from xda developers to hacking games using Lucky Patcher, I was obsessed with figuring out how things worked behind the screen. That curiosity turned into a passion and it&apos;s what turned me into the person I am today. It&apos;s what drives me to keep learning every day.
+              </p>
+              <p>
+                If you&apos;re into creating, breaking and fixing stuff, you&apos;re in the right place.
+              </p>
+            </div>
+          </BlurFade>
+        </section>
+        <section>
+          <BlurFade delay={0.25 * 3}>
+            <div>
+              <StacksCard />
+              <GlobeCard />
+            </div>
+          </BlurFade>
+        </section>
+      </section>
     </div>
   );
 }
