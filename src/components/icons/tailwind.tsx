@@ -18,8 +18,8 @@ export default function TailwindLogo(props: React.SVGProps<SVGSVGElement>) {
           y2="185.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#32B1C1" />
-          <stop offset="1" stopColor="#14C6B7" />
+          <stop stopColor="#ffffff" />
+          <stop offset="1" stopColor="#ffffff" />
         </linearGradient>
       </defs>
     </svg>

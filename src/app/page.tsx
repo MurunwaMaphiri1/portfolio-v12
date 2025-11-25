@@ -38,7 +38,7 @@ export default function Home() {
         </section>
         <section>
           <BlurFade delay={0.25 * 3}>
-            <div>
+            <div className="mt-8">
               <StacksCard />
               <GlobeCard />
             </div>

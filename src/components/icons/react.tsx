@@ -7,7 +7,7 @@ export default function ReactLogo(props: React.SVGProps<SVGSVGElement>) {
       viewBox="0 0 128 128"
       {...props}
     >
-      <g fill="#61DAFB">
+      <g fill="#ffffff">
         <circle cx="64" cy="64" r="11.4" />
         <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 
         2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 

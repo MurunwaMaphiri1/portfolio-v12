@@ -46,8 +46,8 @@ export default function Globe({ width = 400, height = 400, className = '' }: Glo
       mapSamples: 16000,
       mapBrightness: 2,
       baseColor: [0.8, 0.8, 0.8],
-      markerColor: [1, 0.5, 1],
-      glowColor: [0.5, 0.5, 0.5],
+      markerColor: [0.9, 0.9, 0.9],
+      glowColor: [0.7, 0.7, 0.7],
       scale: 1.05,
       markers: [{ location: [lat, lng], size: 0.1 }],
       onRender: (state) => {

@@ -6,7 +6,7 @@ export default async function NowPlaying() {
 
   if (typeof nowPlayingData === 'string') {
     return (
-      <div className="mb-4 flex w-full flex-row-reverse items-center justify-center space-x-0 text-sm sm:flex-row sm:space-x-2">
+      <div className="mb-2 flex w-full flex-row-reverse items-center justify-center space-x-0 text-sm sm:flex-row sm:space-x-2">
         {' '}
         <Spotify className="ml-auto size-4" />
         <div className="inline-flex w-full max-w-full flex-col truncate sm:flex-row">
@@ -24,7 +24,7 @@ export default async function NowPlaying() {
   const { artist, songUrl, title, albumImageUrl } = nowPlayingData
 
   return (
-    <div className="mb-4 flex w-full flex-row-reverse items-center justify-center space-x-0 text-sm sm:flex-row sm:space-x-2">
+    <div className="mb-2 flex w-full flex-row-reverse items-center justify-center space-x-0 text-sm sm:flex-row sm:space-x-2">
         <div className="ml-auto h-6 w-6 overflow-hidden rounded-4xl shadow-md">
         <img
             src={albumImageUrl}

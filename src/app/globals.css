@@ -135,11 +135,11 @@ body {
 }
 
 .animate-marquee-left {
-  animation: marquee-left 30s linear infinite;
+  animation: marquee-left 60s linear infinite;
 }
 
 .animate-marquee-up {
-  animation: marquee-up 30s linear infinite;
+  animation: marquee-up 60s linear infinite;
 }
 
 .animate-marquee-left.direction-reverse {
