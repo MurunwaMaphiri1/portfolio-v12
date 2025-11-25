@@ -23,7 +23,7 @@ export default function Globe({ width = 400, height = 400, className = '' }: Glo
   const [phi, theta] = locationToAngles(lat, lng);
 
   // Tilt the globe upwards by adjusting the theta (vertical angle)
-  const tiltedTheta = theta - 0.25; // Adjust this value to control the tilt (-0.2 tilts upwards)
+  const tiltedTheta = theta - 0.25; 
 
   useEffect(() => {
     if (!canvasRef.current) return;

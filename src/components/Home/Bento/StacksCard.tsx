@@ -67,7 +67,6 @@ const StacksCard = ({ isForSmall = false }: { isForSmall?: boolean }) => {
                 shadow-[0_0_40px_-10px_rgba(255,255,255,0.15)_inset]
                 backdrop-blur-sm"
     >
-      {/* ⭐ Add padding here */}
       <div className="p-4">
         <div className="mb-3 flex items-center gap-2">
           <Layers className="size-4" />
