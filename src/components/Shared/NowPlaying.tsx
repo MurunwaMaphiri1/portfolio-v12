@@ -1,5 +1,6 @@
 import { getNowPlaying } from '@/lib/Spotify'
 import { Spotify } from '@/components/icons/spotify'
+import NowPlayingIndicator from './NowPlayingIndictor'
 
 export default async function NowPlaying() {
   const nowPlayingData = await getNowPlaying()
@@ -33,20 +34,28 @@ export default async function NowPlaying() {
         />
         </div>
       <div className="inline-flex w-full max-w-full flex-col truncate sm:flex-row">
-        <a
-          className="max-w-max truncate font-medium text-gray-200"
-          href={songUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {title}
-        </a>
+        <div className='inline-flex mb-2'>
+          <a
+            className="max-w-max truncate font-medium text-gray-200"
+            href={songUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {title}
+          </a>
+          <div className='ml-2 -mt-1 sm:hidden'>
+            <NowPlayingIndicator />
+          </div>
+        </div>
         <span className="mx-2 hidden text-gray-200 sm:block">
           {' – '}
         </span>
         <p className="max-w-max truncate text-gray-500">
           {artist ?? 'Spotify'}
         </p>
+        <div className='ml-2 hidden sm:block'>
+          <NowPlayingIndicator />
+        </div>
       </div>
     </div>
   )
