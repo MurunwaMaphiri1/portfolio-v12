@@ -28,16 +28,17 @@ const projectItems: ProjectItem[] = [
   },
   {
     id: 2,
-    name: "Crazy 8s (Card Game)",
-    timeline: "Oct 2025 - Nov 2025",
-    description: "Crazy 8s is a card game where players take turns matching cards by number or suit. The game features interactive animations, hand management and a responsive UI built with NextJS and TypeScript. Framer Motion is used for smooth card transitions and Zustand manages state.",
-    githublink: "https://github.com/MurunwaMaphiri1/crazy-8s-game",
-    livedemo: "https://crazy-8s-game.vercel.app/",
+    name: "Crazy 8s Multiplayer Card Game",
+    timeline: "Dec 2025 - Jan 2026",
+    description: "Crazy 8s is a real-time multiplayer card game where players connect and take turns matching cards by number or suit. The game uses WebSockets to synchronise game state, turns and player actions across connected clients. It features interactive card animations, hand management and a responsive UI built with Next.js and TypeScript. Zustand is used for client-side state management, while Framer Motion provides smooth card transitions.",
+    githublink: "https://github.com/MurunwaMaphiri1/crazy-8s-multiplayer",
+    livedemo: "https://crazy-8s-client.onrender.com/",
     techstack: [
       "NextJS",
       "TypeScript",
-      "Framer Motion",
-      "Zustand"
+      "WebSockets",
+      "Zustand",
+      "Framer Motion"
     ],
     image: "/images/project-videos/Crazy8s.png",
   },
@@ -59,14 +60,14 @@ const projectItems: ProjectItem[] = [
     id: 4,
     name: "MagicBox Theatres",
     timeline: "Feb 2025 - Mar 2025",
-    description: "The Movie Reservation System is a .NET Core Web API that allows users to browse movies, select showtimes and book reservations securely. The API is designed with JWT authentication, Entity Framework Core and PostgreSQL for data storage. Also includes email functionality to confirm reservation.",
+    description: "The Movie Reservation System is a .NET Core Web API that allows users to browse movies, select showtimes and book reservations securely. The API is designed with JWT authentication, Entity Framework Core and PostgreSQL for data storage. Also includes email functionality to confirm reservation and cancellation (with refund functionality).",
     githublink: "https://github.com/MurunwaMaphiri1/movie-reservation-system",
     livedemo: "#",
     techstack: [
       "ReactJS",
       "C#",
       ".NET",
-      "PostgreSQL"
+      "PostgreSQL",
     ],
     image: "/images/project-videos/MagicBox Theatres.png",
   },
