@@ -68,6 +68,7 @@ const projectItems: ProjectItem[] = [
       "C#",
       ".NET",
       "PostgreSQL",
+      "Docker"
     ],
     image: "/images/project-videos/MagicBox Theatres.png",
   },
