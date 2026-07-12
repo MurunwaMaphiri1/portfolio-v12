@@ -1,4 +1,4 @@
-import { getNowPlaying } from '@/lib/Spotify'
+import { getNowPlaying } from '@/lib/LastFM'
 import { Spotify } from '@/components/icons/spotify'
 import NowPlayingIndicator from './NowPlayingIndictor'
 

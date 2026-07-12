@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Michroma, Source_Code_Pro, Electrolize } from "next/font/google";
 import "./globals.css";
 import NowPlaying from "@/components/Shared/NowPlaying";
 import gradientImg from "../../public/images/background/gradient.webp"
@@ -22,6 +22,24 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const michroma = Michroma({
+  variable: "--font-michroma",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const sourceCodePro = Source_Code_Pro({
+  variable: "--font-source-code-pro",
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const electrolize = Electrolize({
+  variable: "--font-electrolize",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Murunwa Maphiri - Software Developer",
   description: "Welcome to my personal corner of the internet!",
@@ -35,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${geistSans.variable} ${geistMono.variable} ${michroma.variable} ${sourceCodePro.variable} ${electrolize.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
