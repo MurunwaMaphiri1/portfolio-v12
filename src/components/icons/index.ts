@@ -14,3 +14,5 @@ export { default as GitLogo } from "./git";
 export { default as NpmLogo } from "./npm";
 export { default as PostmanLogo } from "./postman";
 export { default as Csharp2Logo } from "./csharp2";
+export { default as TerraformLogo } from "./terraform";
+export { default as AwsLogo } from "./aws";

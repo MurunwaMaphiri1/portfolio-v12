@@ -16,6 +16,8 @@ import {
     NpmLogo,
     PostmanLogo,
     Csharp2Logo,
+    AwsLogo,
+    TerraformLogo,
   } from "../../icons";
   import { cn } from "@/lib/utils";
   import type React from "react";
@@ -48,6 +50,8 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   NpmLogo,
   GitLogo,
   Csharp2Logo,
+  AwsLogo,
+  TerraformLogo,
   ExpressLogo,
   PostgreSQLLogo,
   MongoDBLogo,
@@ -55,6 +59,8 @@ const backendAndTools: React.FC<React.SVGProps<SVGSVGElement>>[] = [
   NpmLogo,
   GitLogo,
   Csharp2Logo,
+  AwsLogo,
+  TerraformLogo,
 ]
 
 const StacksCard = ({ isForSmall = false }: { isForSmall?: boolean }) => {
