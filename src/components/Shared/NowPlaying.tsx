@@ -1,9 +1,35 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import { getNowPlaying } from '@/lib/LastFM'
 import { Spotify } from '@/components/icons/spotify'
 import NowPlayingIndicator from './NowPlayingIndictor'
 
-export default async function NowPlaying() {
-  const nowPlayingData = await getNowPlaying()
+const POLL_INTERVAL_MS = 15000
+
+export default function NowPlaying() {
+  const [nowPlayingData, setNowPlayingData] = useState<
+    Awaited<ReturnType<typeof getNowPlaying>> | null
+  >(null)
+
+  useEffect(() => {
+    let isMounted = true
+
+    const fetchNowPlaying = async () => {
+      const data = await getNowPlaying()
+      if (isMounted) setNowPlayingData(data)
+    }
+
+    fetchNowPlaying()
+    const intervalId = setInterval(fetchNowPlaying, POLL_INTERVAL_MS)
+
+    return () => {
+      isMounted = false
+      clearInterval(intervalId)
+    }
+  }, [])
+
+  if (nowPlayingData === null) return null
 
   if (typeof nowPlayingData === 'string') {
     return (
