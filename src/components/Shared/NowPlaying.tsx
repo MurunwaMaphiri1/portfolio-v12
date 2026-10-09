@@ -59,8 +59,8 @@ export default function NowPlaying() {
             className="h-full w-full object-cover"
         />
         </div>
-      <div className="inline-flex w-full max-w-full flex-col truncate sm:flex-row">
-        <div className='inline-flex mb-2'>
+      <div className="inline-flex w-full max-w-full flex-col truncate sm:flex-row sm:items-baseline">
+        <div className='inline-flex items-baseline max-sm:mb-2'>
           <a
             className="max-w-max truncate font-medium text-gray-200"
             href={songUrl}
@@ -69,7 +69,7 @@ export default function NowPlaying() {
           >
             {title}
           </a>
-          <div className='ml-2 -mt-1 sm:hidden'>
+          <div className='ml-2 sm:hidden'>
             <NowPlayingIndicator />
           </div>
         </div>
